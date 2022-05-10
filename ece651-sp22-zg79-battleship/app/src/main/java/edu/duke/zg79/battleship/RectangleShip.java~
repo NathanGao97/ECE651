@@ -1,0 +1,36 @@
+package edu.duke.zg79.battleship;
+
+import java.util.HashSet;
+
+
+/**
+ * This class handles a real BattleShip that 
+ * in the rectangle shape
+ */  
+public class RectangleShip{
+  
+  /**
+   * This make the right coordinate set, 
+   * and pass them up to th eBasicShip constructor
+   */
+  public RectangleShip(Coordinate upperLeft, int width, int height) {
+    makeCoords(upperLeft, width, height);
+    }
+  
+  /**
+   * This generate the set of coordinates for a rectangle
+   * @param upperLeft is the upper left coordinate of the rectangle 
+   */
+  public static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height) {
+    HashSet<Coordinate> coords= new HashSet<Coordinate>();
+    for (int i = 0; i < width; i++) { // go through each row
+      for(int j = 0; j < height; j++) { // go through each cloumn
+        int row = upperLeft.getRow() + j;
+        int column = upperLeft.getColumn() + i;
+        Coordinate coord = new Coordinate(row, column); // construct the current coordinate
+        coords.add(coord); // set as part of the rectangle
+      }
+    }
+    return coords;
+  }
+}

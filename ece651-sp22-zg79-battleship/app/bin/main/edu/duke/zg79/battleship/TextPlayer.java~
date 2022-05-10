@@ -1,0 +1,92 @@
+package edu.duke.zg79.battleship;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintStream;
+
+/**
+ * This class represent a text player of the battleship game
+ */
+public class TextPlayer {
+
+  /**
+   * The name of the player
+   */
+  private final String name;
+  
+  /**
+   * The battleship board
+   */
+  private final Board<Character> theBoard;
+  
+  /**
+   * The textual dispaly information of the board 
+   */
+  private final BoardTextView view;
+
+  /**
+   * The input from player
+   */
+  private final BufferedReader inputReader;
+
+  /**
+   * The output to player
+   */
+  private final PrintStream out;
+
+  /**
+   * The factory of the ship
+   */
+  final AbstractShipFactory<Character> shipFactory;
+
+  /**
+   * Constructs a textplayer of the battleship game  
+   */
+  public TextPlayer(String name, Board<Character> theBoard, BufferedReader inputSource, PrintStream out, V1ShipFactory factory) {
+    this.name = name;
+    this.theBoard = theBoard;
+    this.view = new BoardTextView(theBoard);
+    this.inputReader = new BufferedReader(inputSource);
+    this.out = out;
+    this.shipFactory = factory;
+  }
+
+  /**
+   * This read input from player and get the placement information  
+   */
+  public Placement readPlacement(String prompt) throws IOException {
+    out.println(prompt);
+    String s = inputReader.readLine();
+    return new Placement(s);
+  }
+
+  /**
+   * This add ship to the borad and then display the borad  
+   */
+  public void doOnePlacement() throws IOException {
+    Placement p = readPlacement("Player " + name + " where do you want to place a Destroyer?"); // read a Placement
+    Ship<Character> s  = shipFactory.makeDestroyer(p); // create a destroyer based on the location in that Placement
+    theBoard.tryAddShip(s); // add that ship to the board
+    out.print(view.displayMyOwnBoard()); // print out the board
+  }
+
+  /**
+   * This generate the make placement phase for players during the battleship game 
+   */
+  public void doPlacementPhase() throws IOException {
+    out.print(view.displayMyOwnBoard()); // the initial empty board
+    // the instruction
+    out.print("Player " + name + ":"
+              + " you are going to place the following ships (which are all rectangular)."
+              + " For each ship, type the coordinate of the upper left side of the ship,"
+              + " followed by either H (for horizontal) or V (for vertical)."
+              + "  For example M4H would place a ship horizontally starting at M4 and going to the right."
+              + "  You have\n\n"
+              + "2 \"Submarines\" ships that are 1x2\n"
+              + "3 \"Destroyers\" that are 1x3\n"
+              + "3 \"Battleships\" that are 1x4\n"
+              + "2 \"Carriers\" that are 1x6\n");
+    this.doOnePlacement(); // call doOnePlacement
+  }
+
+}

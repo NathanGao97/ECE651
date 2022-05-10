@@ -1,0 +1,12 @@
+package edu.duke.zg79.battleship;
+
+/**
+ * This class check the rule that the ship does not 
+ * collide with anything else on theBoard
+ */
+public class NoCollisionRuleChecker {
+
+  public NoCollisionRuleChecker(PlacementRuleChecker<T> next) {
+    super(next);
+  }
+}

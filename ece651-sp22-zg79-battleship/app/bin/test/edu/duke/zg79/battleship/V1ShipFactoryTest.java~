@@ -1,0 +1,30 @@
+package edu.duke.zg79.battleship;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class V1ShipFactoryTest {
+
+  /**
+   * This help to check whether the various ship factory meet our expectation
+   */
+  private void checkShip(Ship<Character> testShip, String expectedName, char expectedLetter, Coordinate... expectedLocs) {
+    for (Coordinate loc : expectedLocs) {
+      assertEquals(expectedLetter, testShip.getDisplayInfoAt(loc));
+      assertEquals(expectedName, testShip.getName());
+    } 
+  }
+  
+  @Test
+  public void test_destroyer() {
+    Placement v = new Placement(new Coordinate(1, 2), 'V');
+    Placement h = new Placement(new Coordinate(1, 2), 'H');
+    V1ShipFactory destroyer = new V1ShipFactory();
+    Ship<Character> destroyer_v = destroyer.makeDestroyer(v);
+    Ship<Character> destroyer_h = destroyer.makeDestroyer(h);
+    checkShip(destroyer_v, "Destroyer", 'd', new Coordinate(1, 2), new Coordinate(2, 2), new Coordinate(3, 2));
+    checkShip(destroyer_h, "Destroyer", 'd', new Coordinate(1, 2), new Coordinate(1, 3), new Coordinate(1, 4));
+  }
+
+}

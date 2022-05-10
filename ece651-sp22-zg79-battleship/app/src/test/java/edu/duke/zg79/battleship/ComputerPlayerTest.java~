@@ -1,0 +1,38 @@
+package edu.duke.zg79.battleship;
+
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.StringReader;
+
+import org.junit.jupiter.api.Test;
+
+public class ComputerPlayerTest {
+  /*
+  /**
+   * This help to create a computer player
+   */
+  private ComputerPlayer createComputerPlayer(String name, int w, int h, String inputData, OutputStream bytes) {
+    BufferedReader input = new BufferedReader(new StringReader(inputData));
+    PrintStream output = new PrintStream(bytes, true);
+    Board<Character> board = new BattleShipBoard<Character>(w, h, 'X');
+    V2ShipFactory shipFactory = new V2ShipFactory();
+    return new ComputerPlayer(name, board, input, output, shipFactory);
+  }
+
+  @Test
+  public void test_fire() {
+    BattleShipBoard<Character> board = new BattleShipBoard<Character>(4, 4, 'X');
+    BoardTextView view = new BoardTextView(board);
+    V1ShipFactory f = new V1ShipFactory();
+    Ship<Character> s = f.makeSubmarine(new Placement("A0V"));
+    board.tryAddShip(s);
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    ComputerPlayer player = createComputerPlayer("A", 4, 4, "f\naa1\n*1\nz1\naa\na8\nA0\nf\nB1\n", bytes);
+    player.playOneTurn(board, view, "B");
+    player.playOneTurn(board, view, "B");
+    
+    }
+
+}

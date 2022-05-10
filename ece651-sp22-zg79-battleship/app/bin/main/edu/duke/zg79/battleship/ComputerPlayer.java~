@@ -1,0 +1,103 @@
+package edu.duke.zg79.battleship;
+
+import java.io.BufferedReader;
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.function.Function;
+
+/**
+ * This class represent a computer player of the battleship game
+ */
+public class ComputerPlayer extends TextPlayer {
+
+  private int row;
+
+  private int column;
+
+  private int shipNum;
+
+  private ArrayList<Placement> shipPositions;
+  
+  /**
+   * Constructs a computer of the battleship game  
+   */
+  public ComputerPlayer(String name, Board<Character> theBoard, BufferedReader inputSource, PrintStream out, V2ShipFactory factory) {
+    super(name, theBoard, inputSource, out, factory);
+    this.row = 0;
+    this.column = 0;
+    this.shipNum = 0;
+    this.shipPositions = new ArrayList<Placement>();
+      
+  }
+
+  private void fillShipPositions() {
+    shipPositions.add(new Placement("a0v"));
+    shipPositions.add(new Placement("a1v"));
+    shipPositions.add(new Placement("a2v"));
+    shipPositions.add(new Placement("a3v"));
+    shipPositions.add(new Placement("a4v"));
+    shipPositions.add(new Placement("a5r"));
+    shipPositions.add(new Placement("a7r"));
+    shipPositions.add(new Placement("d0r"));
+    shipPositions.add(new Placement("d2u"));
+    shipPositions.add(new Placement("d4u"));
+    
+  }
+
+  @Override
+  public void doOnePlacement(String shipName, Function<Placement, Ship<Character>> createFn) throws IOException {
+    Placement p = shipPositions.get(shipNum);
+    shipNum += 1;
+    Ship<Character> s = createFn.apply(p);
+    theBoard.tryAddShip(s);
+  }
+  
+  @Override
+  public void doPlacementPhase() throws IOException {
+    this.fillShipPositions();
+    for (String s : this.shipsToPlace) { // call doOnePlacement iteratively from the list of ships for creation
+      doOnePlacement(s, shipCreationFns.get(s));
+    }
+    out.println("Player " + name + " has placed all ships on the board!");
+  }
+
+  /**
+   * This perform a one-turn fire action of a player
+   */
+  @Override
+  public void doFire(Board<Character> enemyBoard) throws IOException {
+    Coordinate c = new Coordinate(row, column);
+    Ship<Character> target = enemyBoard.fireAt(c); // find what is located att the coordinate   
+
+    if (column == 9) {
+      column = 0;
+      if (row == 19) {
+        row = 0;
+      }
+      else {
+        row += 1;
+      }
+    }
+    else {
+      column += 1;
+    }
+    
+    if (target == null) { // a miss
+      String missResult = "Player " + name + " missed at " + c + "!";
+      out.println(missResult);
+    }
+    else { // a hit
+      String hitResult = "Player " + name + " hit your " + target.getName() + " at " + c + "!";
+      out.println(hitResult);
+    }
+  }
+
+  public void playOneTurn(Board<Character> enemyBoard, BoardTextView enemyView, String enemyName) throws IOException { 
+    doFire(enemyBoard);
+  }
+
+}

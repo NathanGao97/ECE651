@@ -1,0 +1,39 @@
+package edu.duke.zg79.battleship;
+
+import static edu.duke.zg79.battleship.RectangleShip.makeCoords;
+import static edu.duke.zg79.battleship.RectangleShip.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.HashSet;
+
+import org.junit.jupiter.api.Test;
+
+public class RectangleShipTest {
+
+  /**
+   * test the constructor
+   */
+  @Test
+  public void test_constructor() {
+    Coordinate c = new Coordinate(1, 2);
+    assertNotNull(new RectangleShip(c, 1, 2));
+  }
+  
+  /**
+   * test whether the rectangle is counstructed correctly
+   */
+  @Test
+  public void test_make_coords() {
+    Coordinate upper = new Coordinate(1, 2);
+    Coordinate middle = new Coordinate(2, 2);
+    Coordinate lower = new Coordinate(3,2);
+    HashSet<Coordinate> expected = new HashSet<Coordinate>();
+    expected.add(upper);
+    expected.add(middle);
+    expected.add(lower);
+    HashSet<Coordinate> coords = makeCoords(upper, 1, 3);
+    assertEquals(expected, coords);
+  }
+
+}
