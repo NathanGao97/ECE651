@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.MapSelectController">
+   <children>
+      <ImageView fitHeight="924.0" fitWidth="1289.0" layoutX="-7.0" layoutY="-3.0">
+         <image>
+            <Image url="@image/Background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="577.0" fitWidth="189.0" layoutX="98.0" layoutY="166.0" opacity="0.9">
+         <image>
+            <Image url="@image/TwoPlayer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="581.0" fitWidth="191.0" layoutX="396.0" layoutY="166.0" opacity="0.9">
+         <image>
+            <Image url="@image/ThreePlayer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="583.0" fitWidth="187.0" layoutX="700.0" layoutY="166.0" opacity="0.9">
+         <image>
+            <Image url="@image/FourPlayer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="583.0" fitWidth="201.0" layoutX="997.0" layoutY="166.0" opacity="0.9">
+         <image>
+            <Image url="@image/FivePlayer.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="map2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="578.0" layoutX="100.0" layoutY="166.0" onMouseClicked="#onSelectMapRectangle" opacity="0.0" stroke="BLACK" strokeType="INSIDE" styleClass="hoverable" width="188.0" />
+      <Rectangle fx:id="map3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="578.0" layoutX="400.0" layoutY="166.0" onMouseClicked="#onSelectMapRectangle" opacity="0.0" stroke="BLACK" strokeType="INSIDE" styleClass="hoverable" width="188.0" />
+
+      <Rectangle fx:id="map4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="578.0" layoutX="700.0" layoutY="166.0" onMouseClicked="#onSelectMapRectangle" opacity="0.0" stroke="BLACK" strokeType="INSIDE" styleClass="hoverable" width="188.0" />
+      <Rectangle fx:id="map5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="578.0" layoutX="1000.0" layoutY="166.0" onMouseClicked="#onSelectMapRectangle" opacity="0.0" stroke="BLACK" strokeType="INSIDE" styleClass="hoverable" width="188.0" />
+      <Text fill="WHITE" layoutX="113.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 Player">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="416.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 Player">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1014.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 Player">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="717.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 Player">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limgrave">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="435.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liurnia">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="738.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caelid">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1046.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altus">
+         <font>
+            <Font name="Wawati SC Regular" size="42.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="509.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Map">
+         <font>
+            <Font name="Wawati SC Regular" size="65.0" />
+         </font>
+      </Text>
+      <Button fx:id="back_from_select" layoutX="561.0" layoutY="811.0" mnemonicParsing="false" onAction="#onSelectBackButton" opacity="0.55" prefHeight="71.0" prefWidth="159.0" text="Back">
+         <font>
+            <Font name="Wawati SC Regular" size="34.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

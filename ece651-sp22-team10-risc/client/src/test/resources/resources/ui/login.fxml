@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.LoginRegisterController">
+   <children>
+      <ImageView fitHeight="921.0" fitWidth="1281.0">
+         <image>
+            <Image url="@image/BlueSky.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="481.0" layoutY="209.0" opacity="0.84" prefHeight="62.0" prefWidth="430.0">
+         <font>
+            <Font size="35.0" />
+         </font></TextField>
+      <Text fill="#9e5eff" fontSmoothingType="LCD" layoutX="506.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Risc Game">
+         <font>
+            <Font name="Wawati SC Regular" size="70.0" />
+         </font>
+      </Text>
+      <Text fill="#6097ff" layoutX="286.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+         <font>
+            <Font name="Wawati TC Regular" size="37.0" />
+         </font>
+      </Text>
+      <Text fill="#6097ff" layoutX="289.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font name="Wawati TC Regular" size="37.0" />
+         </font>
+      </Text>
+      <Text fx:id="loginError" fill="#cd4210" layoutX="387.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="hide" text="username or password wrong" textAlignment="CENTER" wrappingWidth="594.3828125">
+         <font>
+            <Font name="Wawati TC Regular" size="30.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="481.0" layoutY="339.0" opacity="0.84">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </PasswordField>
+      <Group fx:id="loginGroup" styleClass="reveal">
+         <children>
+            <Button fx:id="loginButton" layoutX="607.0" layoutY="600.0" mnemonicParsing="false" onAction="#onLoginButton" opacity="0.84" text="Log In" textFill="#5e9fd6">
+               <font>
+                  <Font name="Wawati TC Regular" size="34.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpButton" layoutX="455.0" layoutY="730.0" mnemonicParsing="false" onAction="#onSignUpButton" opacity="0.84" text="Don’t have an account? Sign Up" textFill="#ee882f" underline="true">
+               <font>
+                  <Font name="Wawati SC Regular" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="registerGroup" styleClass="hide">
+         <children>
+            <Text fill="#6097ff" layoutX="140.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-enter Password:">
+               <font>
+                  <Font name="Wawati SC Regular" size="37.0" />
+               </font>
+            </Text>
+            <Button fx:id="returnLogin" layoutX="350.0" layoutY="600.0" mnemonicParsing="false" onAction="#onReturnButton" opacity="0.84" text="Return" textFill="#5e9fd6">
+               <font>
+                  <Font name="Wawati SC Regular" size="34.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitButton" layoutX="864.0" layoutY="600.0" mnemonicParsing="false" onAction="#onSubmitButton" opacity="0.84" text="Submit" textFill="#5e9fd6">
+               <font>
+                  <Font name="Wawati SC Regular" size="34.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="reEnterPassword" layoutX="481.0" layoutY="466.0" opacity="0.84" prefHeight="67.0" prefWidth="434.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

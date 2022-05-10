@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.MoveAttackPopUpController">
+   <children>
+      <ImageView fitHeight="679.0" fitWidth="1011.0" layoutX="-4.0" layoutY="-279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/popUpBackGrounp.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="263.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#">
+         <font>
+            <Font name="Forte" size="43.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="move_attack_unit_image" fitHeight="212.0" fitWidth="186.0" layoutX="478.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Chopper.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="unit_type_text_move_attack" fill="#3f2b2b" layoutX="658.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chooper" wrappingWidth="122.99999685839339">
+         <font>
+            <Font name="Forte" size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="source_terr" fill="#3f2b2b" layoutX="445.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.79608154296875">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="target_terr" fill="#3f2b2b" layoutX="447.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.79608154296875">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="moveButton" layoutX="218.0" layoutY="257.0" mnemonicParsing="false" onAction="#onMoveButton" opacity="0.8" prefHeight="68.0" prefWidth="136.0" text="Move">
+         <font>
+            <Font name="Forte" size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="num_of_units" layoutX="341.0" layoutY="99.0" opacity="0.53" prefHeight="53.0" prefWidth="123.0">
+         <font>
+            <Font name="Forte" size="37.0" />
+         </font>
+      </TextField>
+      <Button fx:id="attackButton" layoutX="554.0" layoutY="257.0" mnemonicParsing="false" onAction="#onAttackButton" opacity="0.8" prefHeight="68.0" prefWidth="136.0" text="Attack">
+         <font>
+            <Font name="Forte" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

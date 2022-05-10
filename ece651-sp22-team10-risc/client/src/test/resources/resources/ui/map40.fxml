@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="850.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.PolygonController">
+   <children>
+      <ImageView fitHeight="854.0" fitWidth="1287.0" layoutX="-3.0" layoutY="-3.0">
+         <image>
+            <Image url="@image/fourPlayerNew.jpg" />
+         </image>
+      </ImageView>
+      <Group fx:id="territory_group_text" layoutX="-201.0" layoutY="-66.0" scaleX="0.75" scaleY="0.75">
+         <children>
+            <Text fx:id="AstaporText" layoutX="209.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Astapor">
+               <font>
+                  <Font name="Wawati SC Regular" size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="MeereenText" layoutX="105.0" layoutY="803.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meereen">
+               <font>
+                  <Font name="Wawati SC Regular" size="43.0" />
+               </font>
+            </Text>
+            <Text fx:id="NorvosText" layoutX="392.0" layoutY="672.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Norvos">
+               <font>
+                  <Font name="Wawati SC Regular" size="49.0" />
+               </font>
+            </Text>
+            <Text fx:id="PentosText" layoutX="841.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pentos">
+               <font>
+                  <Font name="Wawati SC Regular" size="46.0" />
+               </font>
+            </Text>
+            <Text fx:id="TyroshText" layoutX="729.0" layoutY="1008.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tyrosh">
+               <font>
+                  <Font name="Wawati SC Regular" size="43.0" />
+               </font>
+            </Text>
+            <Text fx:id="ValyriaText" layoutX="988.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valyria">
+               <font>
+                  <Font name="Wawati SC Regular" size="46.0" />
+               </font>
+            </Text>
+            <Text fx:id="RainwoodText" layoutX="1350.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rainwood" wrappingWidth="160.8850326538086">
+               <font>
+                  <Font name="Wawati SC Regular" size="38.0" />
+               </font>
+            </Text>
+            <Text fx:id="KarholdText" layoutX="787.0" layoutY="837.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Karhold">
+               <font>
+                  <Font name="Wawati SC Regular" size="46.0" />
+               </font>
+            </Text>
+            <Text fx:id="SunspearText" layoutX="1309.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunspear">
+               <font>
+                  <Font name="Wawati SC Regular" size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="BraavosText" layoutX="657.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Braavos">
+               <font>
+                  <Font name="Wawati SC Regular" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="TarthText" layoutX="1296.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarth">
+               <font>
+                  <Font name="Wawati SC Regular" size="42.0" />
+               </font>
+            </Text>
+            <Text fx:id="AsshaiText" layoutX="198.0" layoutY="-4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asshai" wrappingWidth="128.61203002929688">
+               <font>
+                  <Font name="Wawati SC Regular" size="44.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group fx:id="territory_group" layoutX="-3.000030517578125" layoutY="-2.9999866485595703">
+         <children>
+            <Polygon fx:id="Asshai" fill="DODGERBLUE" layoutX="272.0" layoutY="34.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="-268.9999694824219, -31.999990463256836, -268.9999694824219, 23.25023651123047, -268.9999694824219, 129.1182098388672, -268.9999694824219, 178.2163848876953, -268.99993896484375, 208.9027557373047, -189.2643585205078, 254.93231201171875, -162.60726928710938, 238.0548095703125, -38.327484130859375, 208.9027557373047, 30.71685791015625, 208.9027557373047, 59.868896484375, 219.6429901123047, 107.43276977539062, 219.6429901123047, 158.06527709960938, 129.1182098388672, 188.75164794921875, 35.52478790283203, 178.01141357421875, -31.999990463256836" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Braavos" fill="DODGERBLUE" layoutX="535.0" layoutY="-46.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="-73.24838256835938, 48.9999885559082, -83.96426391601562, 153.61343383789062, -137.6654052734375, 270.22161865234375, -162.60726928710938, 305.5109558105469, -200.57244873046875, 305.5109558105469, -162.60726928710938, 405.24163818359375, -172.95474243164062, 463.5457458496094, -41.00335693359375, 474.2859802246094, 107.4327392578125, 449.73687744140625, 143.1148681640625, 389.8984680175781, 158.06524658203125, 305.5109558105469, 132.3746337890625, 142.8732147216797, 90.947998046875, 110.65252685546875, 59.868896484375, 48.9999885559082" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Rainwood" fill="DODGERBLUE" layoutX="904.0" layoutY="30.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="-302.99810791015625, -28.99998664855957, -286.12060546875, 21.57864761352539, -268.99993896484375, 50.73069763183594, -237.02239990234375, 72.21115112304688, -59.04150390625, 72.21115112304688, 8.468505859375, 90.62297058105469, 59.868896484375, 90.62297058105469, 108.19921875, 102.89752197265625, 143.488525390625, 122.84365844726562, 180.3121337890625, 122.84365844726562, 214.067138671875, 122.84365844726562, 289.248779296875, 102.89752197265625, 379.0, 90.62297058105469, 379.0, -28.99998664855957" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Valyria" fill="DODGERBLUE" layoutX="542.0" layoutY="-37.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="148.06524658203125, 270.22161865234375, 148.06524658203125, 305.5109558105469, 128.51190185546875, 405.24163818359375, 148.06524658203125, 427.19732666015625, 197.55621337890625, 488.5700378417969, 251.25732421875, 520.790771484375, 386.27734375, 499.3102722167969, 403.15484619140625, 427.19732666015625, 412.36077880859375, 394.97662353515625, 403.15484619140625, 305.5109558105469, 386.27734375, 270.22161865234375, 372.468505859375, 153.61343383789062, 301.88983154296875, 143.34841918945312, 128.51190185546875, 134.14251708984375" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Tarth" fill="DODGERBLUE" layoutX="556.0" layoutY="-27.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="463.7335205078125, 168.6377410888672, 422.30694580078125, 143.34841918945312, 371.6744384765625, 143.34841918945312, 371.6744384765625, 180.91229248046875, 371.6744384765625, 246.8879852294922, 396.2235107421875, 319.0009460449219, 396.2235107421875, 405.24163818359375, 454.527587890625, 405.24163818359375, 551.189697265625, 405.24163818359375, 611.028076171875, 375.7707214355469, 726.1019287109375, 305.5109558105469, 726.1019287109375, 157.89752197265625, 611.028076171875, 168.6377410888672, 551.189697265625, 180.91229248046875" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Meereen11112111211111" fill="DODGERBLUE" layoutX="564.0" layoutY="-17.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="538.88818359375, 395.24163818359375, 510.5032958984375, 395.24163818359375, 422.30694580078125, 395.24163818359375, 383.15484619140625, 408.73162841796875, 371.6744384765625, 470.1043701171875, 335.59100341796875, 488.51617431640625, 360.14007568359375, 533.0114135742188, 409.23828125, 568.3007202148438, 454.52752685546875, 589.7811889648438, 568.807373046875, 735.5414428710938, 723.0, 849.0809936523438, 723.0, 299.7950439453125, 667.0037841796875, 319.7411804199219, 596.4251708984375, 368.83935546875" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Astapor" fill="DODGERBLUE" layoutX="281.0" layoutY="40.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="1.554962158203125, 458.1153564453125, -75.92088317871094, 445.9280090332031, -95.86701965332031, 432.119140625, -233.95567321777344, 445.9280090332031, -282.0000305175781, 410.638671875, -282.0000305175781, 219.64297485351562, -199.26437377929688, 254.93231201171875, -54.4404296875, 208.90274047851562, 20.741180419921875, 198.9027557373047, 59.868896484375, 219.6429901123047, 79.04525756835938, 254.93231201171875, 79.04525756835938, 313.97662353515625, 79.04525756835938, 373.8150329589844, 79.04525756835938, 445.92803955078125" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Meereen" fill="DODGERBLUE" layoutX="294.0" layoutY="52.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="-56.768829345703125, 707.5023193359375, -18.410888671875, 759.669189453125, -18.410888671875, 799.0000610351562, -292.0000305175781, 799.0000610351562, -292.0000305175781, 415.98187255859375, -245.489990234375, 432.119140625, -142.69065856933594, 432.119140625, -108.93565368652344, 432.119140625, -92.05815124511719, 432.119140625, -92.05815124511719, 475.82025146484375, -81.31793212890625, 515.7125854492188, -81.31793212890625, 563.2764282226562, -81.31793212890625, 597.0314331054688, -69.04338073730469, 627.7177734375" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Norvos" fill="DODGERBLUE" layoutX="291.0" layoutY="54.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="139.6239013671875, 626.1834716796875, 12.275482177734375, 626.1834716796875, -70.57769775390625, 626.1834716796875, -79.78361511230469, 531.0557250976562, -90.52383422851562, 432.119140625, -79.78361511230469, 432.119140625, 23.015716552734375, 445.92803955078125, 69.04525756835938, 432.119140625, 69.04525756835938, 373.2859802246094, 99.73162841796875, 373.2859802246094, 197.92800903320312, 373.2859802246094, 220.94277954101562, 432.119140625, 236.28594970703125, 509.57525634765625, 220.94277954101562, 609.3059692382812" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Pentos" fill="DODGERBLUE" layoutX="304.0" layoutY="64.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="513.2034912109375, 511.849853515625, 448.76214599609375, 541.0018920898438, 384.32073974609375, 541.0018920898438, 292.26165771484375, 551.7421264648438, 226.28594970703125, 551.7421264648438, 226.28594970703125, 511.849853515625, 214.01141357421875, 458.148681640625, 189.99996948242188, 363.02099609375, 241.629150390625, 363.0209655761719, 338.29119873046875, 336.9375305175781, 366.5118408203125, 303.1153564453125, 438.02191162109375, 396.7759704589844, 499.3946533203125, 419.7907409667969, 530.0809936523438, 488.8350830078125" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Tyros" fill="DODGERBLUE" layoutX="304.0" layoutY="68.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="491.7230224609375, 672.624755859375, 508.60052490234375, 732.4631958007812, 508.60052490234375, 789.0, 190.99664306640625, 789.0, 128.089599609375, 789.0000610351562, 28.358917236328125, 789.0000610351562, -28.410888671875, 789.0000610351562, -23.80792236328125, 770.8211669921875, -34.54815673828125, 750.875, -68.30314636230469, 692.5709228515625, 140.3641357421875, 692.5709228515625, 318.3450927734375, 661.8845825195312, 358.23736572265625, 661.8845825195312, 425.74737548828125, 661.8845825195312" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Karhold" fill="DODGERBLUE" layoutX="309.0" layoutY="74.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.0" points="580.6802368164062, 400.489013671875, 818.4996337890625, 649.1444091796875, 983.4449462890625, 784.1644287109375, 497.06622314453125, 784.1644287109375, 497.06622314453125, 719.7230224609375, 474.05145263671875, 659.8846435546875, 340.56573486328125, 649.1444091796875, 176.3936767578125, 682.5709838867188, -72.16587829589844, 682.5709838867188, -89.04338073730469, 613.526611328125, 128.08963012695312, 604.3206787109375, 190.99667358398438, 593.5804443359375, 213.21734619140625, 539.8793334960938, 451.03668212890625, 530.6734008789062, 526.9791259765625, 467.9990234375, 485.552490234375, 409.790771484375" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

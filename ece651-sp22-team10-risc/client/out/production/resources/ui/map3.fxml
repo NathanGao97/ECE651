@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="850.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.PolygonController">
+   <children>
+      <Group fx:id="territory_group" layoutX="-212.0" layoutY="-37.0" scaleX="0.75" scaleY="0.75">
+               <children>
+                  <Polygon fx:id="Sunspear" fill="#86d088" layoutX="656.0" layoutY="538.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="5.512451171875, 261.87567138671875, 461.3284912109375, 180.4080810546875, 425.0, 58.0, -78.388671875, -125.2469482421875" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Pentos" fill="#70d1ff" layoutX="386.0" layoutY="647.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-183.63525390625, 53.70452880859375, 275.512451171875, 152.87567138671875, 262.8475341796875, -173.85867309570312, -94.75521850585938, -133.87109375" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Norvos" fill="#70d1ff" layoutX="462.0" layoutY="420.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-62.546356201171875, 140.66162109375, 186.8475341796875, 55.817657470703125, 337.76275634765625, -81.14120483398438, -21.914596557617188, -62.9002685546875" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Meereen" fill="#70d1ff" layoutX="341.0" layoutY="455.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-138.63525390625, 245.70452880859375, 63.8857421875, 152.9130859375, 94.1058349609375, -65.18417358398438, -86.86410522460938, -65.1842041015625" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Tarth" fill="#86d088" layoutX="677.0" layoutY="369.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="3.0, 82.0, 403.0, 230.0, 420.4996337890625, -41.5421142578125, 78.54315185546875, -14.83441162109375" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Rainwood" fill="#86d088" layoutX="880.0" layoutY="264.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="41.9722900390625, 102.86572265625, 216.214599609375, 69.0, 261.367919921875, -145.63677978515625, -22.35528564453125, -46.91413879394531" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Braavos" fill="#ff6d6d" layoutX="676.0" layoutY="368.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-27.58843994140625, -15.00128173828125, 245.9722900390625, -1.134307861328125, 181.64471435546875, -150.9141387939453, -7.7852783203125, -251.10873413085938" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Astapor" fill="#ff6d6d" layoutX="520.0" layoutY="318.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-84.89419555664062, 79.43899536132812, 148.21478271484375, 34.15576171875, 148.2147216796875, -201.10873413085938, -27.58209228515625, -122.7254867553711" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fx:id="Asshai" fill="#ff6d6d" layoutX="309.0" layoutY="281.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" points="-56.68940734863281, 116.43893432617188, 127.71286010742188, 116.43896484375, 187.489013671875, -85.7254867553711, -162.62374877929688, -116.25857543945312" stroke="BLACK" strokeType="INSIDE" />
+                  <Text layoutX="951.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rainwood">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="883.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarth">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="791.0" layoutY="648.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunspear">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="530.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Astapor">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="503.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Norvos">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="319.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asshai">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="469.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pentos">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="285.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meereen">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="730.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Braavos">
+                     <font>
+                        <Font name="Wawati SC Regular" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.SelectUpgradeUnitTypePopUpController">
+   <children>
+      <ImageView fitHeight="679.0" fitWidth="1011.0" layoutX="-4.0" layoutY="-279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/popUpBackGrounp.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="357.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit Upgrade">
+         <font>
+            <Font name="Forte" size="37.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Chopper" fitHeight="115.0" fitWidth="112.0" layoutX="-2.0" layoutY="118.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Chopper.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="9.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chooper">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Nami" fitHeight="178.0" fitWidth="103.0" layoutX="85.0" layoutY="68.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/nami.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="114.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nami">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Usopp" fitHeight="165.0" fitWidth="92.0" layoutX="177.0" layoutY="71.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Usopp.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="192.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usopp">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Franky" fitHeight="165.0" fitWidth="103.0" layoutX="267.0" layoutY="68.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Franky.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="284.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Franky">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Sanji" fitHeight="178.0" fitWidth="103.0" layoutX="359.0" layoutY="69.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Sanji.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="379.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sanji">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Zoro" fitHeight="167.0" fitWidth="110.0" layoutX="459.0" layoutY="79.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Zoro.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="491.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zoro">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Luffy" fitHeight="155.0" fitWidth="103.0" layoutX="572.0" layoutY="83.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Luffy.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="603.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luffy">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Kaidou" fitHeight="137.0" fitWidth="138.0" layoutX="684.0" layoutY="97.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Kaidou.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="713.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kaidou">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Spy" fitHeight="178.0" fitWidth="103.0" layoutX="814.0" layoutY="68.0" onMouseClicked="#onUnitClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Spy.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3f2b2b" layoutX="846.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spy">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#3f2b2b" layoutX="105.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Click">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="#3f2b2b" layoutX="595.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Click">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="#3f2b2b" layoutX="327.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="upgrade to =&gt;">
+         <font>
+            <Font name="Forte" size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

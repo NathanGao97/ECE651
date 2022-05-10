@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="850.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.PolygonController">
+   <children>
+      <ImageView fitHeight="854.0" fitWidth="1289.0" layoutX="-8.0" layoutY="-4.0">
+         <image>
+            <Image url="@image/twoPlayerNew.jpg" />
+         </image>
+      </ImageView>
+      <Group fx:id="territory_group_text" layoutX="-197.0" layoutY="-98.0" scaleX="0.9" scaleY="0.9">
+         <children>
+            <Text fx:id="AsshaiText" layoutX="170.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asshai" wrappingWidth="165.43582153320312">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="NorvosText" layoutX="359.0" layoutY="914.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Norvos" wrappingWidth="176.59446716308594">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="AstaporText" layoutX="1100.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Astapor">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="MeereenText" layoutX="989.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meereen">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="BraavosText" layoutX="415.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Braavos" wrappingWidth="187.14561462402344">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+            <Text fx:id="PentosText" layoutX="1300.0" layoutY="947.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pentos">
+               <font>
+                  <Font name="Forte" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Text fill="#0b0b0b" layoutX="494.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player: ">
+         <font>
+            <Font name="Forte" size="49.0" />
+         </font>
+      </Text>
+      <Text fx:id="title" fill="#0b0b0b" layoutX="647.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="114.99999214465788">
+         <font>
+            <Font name="Forte" size="49.0" />
+         </font>
+      </Text>
+      <Group fx:id="territory_group" layoutX="-1.52587890625E-5" layoutY="-4.0000152587890625">
+         <children>
+            <Polygon fx:id="Asshai" fill="DODGERBLUE" layoutX="64.0" layoutY="81.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="-62.0, 199.0, 286.0, 199.0, 498.0, 162.99998474121094, 612.0, 59.99998474121094, 747.0, -78.00001525878906, -62.0, -78.00001525878906" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Braavos" fill="DODGERBLUE" layoutX="35.0" layoutY="364.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="534.853759765625, -123.25416564941406, 311.76763916015625, -83.59439086914062, -31.992719650268555, -83.59439086914062, -31.992719650268555, 331.18048095703125, 267.1504211425781, 299.783203125, 511.71893310546875, 222.1162109375, 698.4502563476562, 93.22198486328125" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Norvos" fill="DODGERBLUE" layoutX="33.0" layoutY="841.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="-36.00001525878906, 13.0, 611.8682861328125, 13.0, 676.3153686523438, -350.3807067871094, 349.1224365234375, -183.479248046875, -36.00001525878906, -137.20953369140625" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Astapor" fill="DODGERBLUE" layoutX="805.0" layoutY="81.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="286.6929931640625, 224.19293212890625, 471.0, 245.67529296875, 471.0, -79.00000762939453, 0.812255859375, -83.00001525878906, -116.51446533203125, 55.63899230957031, -76.854736328125, 125.04356384277344" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Meereen" fill="DODGERBLUE" layoutX="580.0" layoutY="32.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="-11.10369873046875, 198.8112030029297, 162.40771484375, 405.3724365234375, 124.40045166015625, 554.0964965820312, 428.45855712890625, 707.145263671875, 698.4503173828125, 768.920166015625, 703.0, 305.5902404785156, 496.2105712890625, 275.8454284667969, 162.40771484375, 184.95849609375, 101.26556396484375, 112.24894714355469" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fx:id="Pentos" fill="DODGERBLUE" layoutX="1101.0" layoutY="742.0" onMouseClicked="#mouseClickedTerritory" onMouseExited="#mouseLeavedTerritory" onMouseMoved="#mouseMovedTerritory" opacity="0.5" points="176.0, 110.0, 176.0, 64.42120361328125, -123.79559326171875, 3.27911376953125, -213.030029296875, -79.00006103515625, -411.66668701171875, -149.0, -452.64105224609375, 110.00006103515625" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+package edu.duke.ece651.mp.client.controller.taks.onsuccess;
+
+import edu.duke.ece651.mp.client.Client;
+import edu.duke.ece651.mp.client.Player;
+import edu.duke.ece651.mp.common.*;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.concurrent.Worker;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.api.FxRobot;
+import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
+import org.testfx.util.WaitForAsyncUtils;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+import javafx.stage.Stage;
+import javafx.concurrent.WorkerStateEvent;
+import javafx.event.EventHandler;
+import java.io.IOException;
+
+import org.junit.jupiter.api.Test;
+import edu.duke.ece651.mp.common.*;
+import edu.duke.ece651.mp.client.Player;
+
+import static org.mockito.Mockito.*;
+
+@ExtendWith(ApplicationExtension.class)
+public class RecvColorMapOnSuccessTest {
+  public RecvColorMapOnSuccess recvController;
+  public Player player = mock(Player.class);
+  
+  @Start
+   private void start(Stage stage) throws IOException {
+    
+    V1MapFactory myFactory = new V1MapFactory(); 
+    RiscMap myMap = myFactory.createTwoPlayerMap();
+
+    player.currentMap = myMap;
+    recvController = new RecvColorMapOnSuccess(player, new Stage(), new Stage());
+   }
+
+  @Test
+  public void testHandle() {
+    Platform.runLater(()->{
+        recvController.handle(new WorkerStateEvent(new Worker.state(null), null));
+      });
+  }
+}

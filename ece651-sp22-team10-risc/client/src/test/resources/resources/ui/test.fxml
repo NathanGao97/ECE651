@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.CubicCurveTo?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.9" prefHeight="850.0" prefWidth="920.0" stylesheets="@shapeStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.duke.ece651.mp.client.controller.PolygonController">
+   <children>
+      <Button layoutX="238.0" layoutY="56.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="252.0" styleClass="first-button" stylesheets="@shapeStyle.css" text="Button" />
+      <Path fill="DODGERBLUE" layoutX="-3.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="2.0" y="3.0" />
+              <CubicCurveTo controlX1="2.0" controlX2="1.601562" controlY1="4.597656" controlY2="5.996094" x="1.0" y="5.996094" />
+              <CubicCurveTo controlX1="0.5" controlX2="0.0" controlY1="5.996094" controlY2="6.695312" x="0.0" y="7.496094" />
+              <CubicCurveTo controlX1="0.0" controlX2="0.601562" controlY1="8.296875" controlY2="8.996094" x="1.300781" y="8.996094" />
+              <CubicCurveTo controlX1="2.398438" controlX2="2.699219" controlY1="8.996094" controlY2="28.988281" x="2.898438" y="118.644531" />
+              <CubicCurveTo controlX1="3.101562" controlX2="3.398438" controlY1="179.015625" controlY2="239.386719" x="3.5" y="252.882812" />
+              <CubicCurveTo controlX1="3.699219" controlX2="3.398438" controlY1="266.574219" controlY2="277.871094" x="2.898438" y="278.46875" />
+              <CubicCurveTo controlX1="2.398438" controlX2="2.199219" controlY1="279.070312" controlY2="280.367188" x="2.601562" y="281.269531" />
+              <CubicCurveTo controlX1="3.101562" controlX2="5.199219" controlY1="282.667969" controlY2="282.867188" x="17.0" y="282.867188" />
+              <CubicCurveTo controlX1="28.101562" controlX2="31.199219" controlY1="282.867188" controlY2="283.167969" x="32.398438" y="284.367188" />
+              <CubicCurveTo controlX1="33.398438" controlX2="34.800781" controlY1="285.367188" controlY2="285.664062" x="36.300781" y="285.265625" />
+              <CubicCurveTo controlX1="37.699219" controlX2="39.101562" controlY1="284.964844" controlY2="285.164062" x="39.398438" y="285.765625" />
+              <CubicCurveTo controlX1="39.800781" controlX2="40.699219" controlY1="286.367188" controlY2="286.863281" x="41.300781" y="286.863281" />
+              <CubicCurveTo controlX1="42.0" controlX2="41.898438" controlY1="286.863281" controlY2="286.464844" x="41.0" y="285.867188" />
+              <CubicCurveTo controlX1="39.898438" controlX2="40.398438" controlY1="285.164062" controlY2="284.867188" x="43.199219" y="284.867188" />
+              <CubicCurveTo controlX1="45.199219" controlX2="47.199219" controlY1="284.867188" controlY2="285.265625" x="47.5" y="285.867188" />
+              <CubicCurveTo controlX1="47.800781" controlX2="48.601562" controlY1="286.367188" controlY2="286.863281" x="49.101562" y="286.863281" />
+              <CubicCurveTo controlX1="49.699219" controlX2="49.898438" controlY1="286.863281" controlY2="286.566406" x="49.699219" y="286.066406" />
+              <CubicCurveTo controlX1="49.398438" controlX2="50.5" controlY1="285.664062" controlY2="285.367188" x="52.101562" y="285.265625" />
+              <CubicCurveTo controlX1="53.898438" controlX2="54.699219" controlY1="285.164062" controlY2="285.566406" x="54.300781" y="286.265625" />
+              <CubicCurveTo controlX1="53.898438" controlX2="54.398438" controlY1="286.863281" controlY2="286.765625" x="55.300781" y="286.066406" />
+              <CubicCurveTo controlX1="56.898438" controlX2="73.199219" controlY1="284.667969" controlY2="284.464844" x="75.5" y="285.765625" />
+              <CubicCurveTo controlX1="77.199219" controlX2="79.0" controlY1="286.664062" controlY2="286.765625" x="78.5" y="285.867188" />
+              <CubicCurveTo controlX1="78.199219" controlX2="83.199219" controlY1="285.367188" controlY2="284.964844" x="89.5" y="284.964844" />
+              <CubicCurveTo controlX1="95.800781" controlX2="100.800781" controlY1="284.964844" controlY2="285.265625" x="100.601562" y="285.664062" />
+              <CubicCurveTo controlX1="100.398438" controlX2="106.0" controlY1="286.066406" controlY2="286.367188" x="113.101562" y="286.265625" />
+              <CubicCurveTo controlX1="120.199219" controlX2="126.0" controlY1="286.265625" controlY2="286.664062" x="126.0" y="287.066406" />
+              <CubicCurveTo controlX1="126.0" controlX2="126.800781" controlY1="287.464844" controlY2="287.863281" x="127.800781" y="287.863281" />
+              <CubicCurveTo controlX1="129.300781" controlX2="129.300781" controlY1="287.863281" controlY2="287.664062" x="128.0" y="286.765625" />
+              <CubicCurveTo controlX1="126.800781" controlX2="126.898438" controlY1="285.867188" controlY2="285.867188" x="128.5" y="286.367188" />
+              <CubicCurveTo controlX1="129.601562" controlX2="131.398438" controlY1="286.765625" controlY2="287.265625" x="132.5" y="287.464844" />
+              <LineTo x="134.5" y="287.863281" />
+              <LineTo x="132.5" y="286.964844" />
+              <CubicCurveTo controlX1="129.800781" controlX2="132.199219" controlY1="285.664062" controlY2="285.566406" x="135.398438" y="286.863281" />
+              <CubicCurveTo controlX1="137.101562" controlX2="138.0" controlY1="287.464844" controlY2="287.464844" x="138.0" y="286.863281" />
+              <CubicCurveTo controlX1="138.0" controlX2="139.199219" controlY1="286.265625" controlY2="285.867188" x="140.601562" y="285.867188" />
+              <CubicCurveTo controlX1="142.300781" controlX2="142.898438" controlY1="285.867188" controlY2="286.265625" x="142.398438" y="287.066406" />
+              <CubicCurveTo controlX1="141.800781" controlX2="142.101562" controlY1="288.0625" controlY2="287.964844" x="143.199219" y="287.066406" />
+              <CubicCurveTo controlX1="144.5" controlX2="145.398438" controlY1="286.066406" controlY2="285.964844" x="147.0" y="286.863281" />
+              <CubicCurveTo controlX1="148.601562" controlX2="149.5" controlY1="287.664062" controlY2="287.664062" x="150.5" y="286.863281" />
+              <CubicCurveTo controlX1="152.199219" controlX2="164.0" controlY1="285.464844" controlY2="285.765625" x="165.898438" y="287.265625" />
+              <CubicCurveTo controlX1="167.0" controlX2="167.199219" controlY1="288.0625" controlY2="288.0625" x="166.601562" y="287.066406" />
+              <CubicCurveTo controlX1="165.699219" controlX2="166.5" controlY1="285.566406" controlY2="285.566406" x="169.199219" y="286.964844" />
+              <CubicCurveTo controlX1="170.601562" controlX2="171.5" controlY1="287.765625" controlY2="287.765625" x="172.300781" y="286.964844" />
+              <CubicCurveTo controlX1="173.800781" controlX2="181.300781" controlY1="285.464844" controlY2="285.566406" x="182.898438" y="287.066406" />
+              <CubicCurveTo controlX1="183.800781" controlX2="184.101562" controlY1="287.964844" controlY2="287.964844" x="183.601562" y="287.164062" />
+              <CubicCurveTo controlX1="182.898438" controlX2="198.601562" controlY1="285.867188" controlY2="285.765625" x="200.699219" y="287.164062" />
+              <CubicCurveTo controlX1="201.300781" controlX2="202.101562" controlY1="287.566406" controlY2="287.464844" x="202.5" y="286.863281" />
+              <CubicCurveTo controlX1="203.398438" controlX2="208.300781" controlY1="285.464844" controlY2="285.566406" x="209.898438" y="287.066406" />
+              <CubicCurveTo controlX1="210.800781" controlX2="211.101562" controlY1="287.964844" controlY2="287.964844" x="210.601562" y="287.164062" />
+              <CubicCurveTo controlX1="210.199219" controlX2="215.601562" controlY1="286.367188" controlY2="285.964844" x="231.699219" y="285.664062" />
+              <CubicCurveTo controlX1="247.101562" controlX2="255.0" controlY1="285.367188" controlY2="284.765625" x="258.699219" y="283.667969" />
+              <CubicCurveTo controlX1="261.601562" controlX2="263.699219" controlY1="282.867188" controlY2="282.566406" x="263.398438" y="283.066406" />
+              <CubicCurveTo controlX1="262.601562" controlX2="268.300781" controlY1="284.265625" controlY2="282.765625" x="269.199219" y="281.566406" />
+              <CubicCurveTo controlX1="269.898438" controlX2="271.300781" controlY1="280.46875" controlY2="280.066406" x="276.601562" y="279.46875" />
+              <CubicCurveTo controlX1="278.300781" controlX2="280.101562" controlY1="279.367188" controlY2="278.867188" x="280.699219" y="278.570312" />
+              <CubicCurveTo controlX1="282.699219" controlX2="290.0" controlY1="277.371094" controlY2="276.070312" x="290.0" y="276.96875" />
+              <CubicCurveTo controlX1="290.0" controlX2="290.5" controlY1="277.46875" controlY2="277.871094" x="291.101562" y="277.871094" />
+              <CubicCurveTo controlX1="291.601562" controlX2="291.800781" controlY1="277.871094" controlY2="277.371094" x="291.398438" y="276.769531" />
+              <CubicCurveTo controlX1="291.101562" controlX2="292.300781" controlY1="276.171875" controlY2="276.46875" x="294.101562" y="277.46875" />
+              <CubicCurveTo controlX1="297.300781" controlX2="297.398438" controlY1="279.070312" controlY2="279.070312" x="296.0" y="277.46875" />
+              <CubicCurveTo controlX1="294.699219" controlX2="294.800781" controlY1="275.871094" controlY2="275.671875" x="296.5" y="275.871094" />
+              <CubicCurveTo controlX1="300.5" controlX2="304.101562" controlY1="276.269531" controlY2="275.871094" x="303.601562" y="274.96875" />
+              <CubicCurveTo controlX1="303.199219" controlX2="303.898438" controlY1="274.472656" controlY2="274.269531" x="305.101562" y="274.570312" />
+              <CubicCurveTo controlX1="306.300781" controlX2="307.5" controlY1="274.871094" controlY2="274.769531" x="307.898438" y="274.171875" />
+              <CubicCurveTo controlX1="308.601562" controlX2="320.398438" controlY1="273.171875" controlY2="268.875" x="323.199219" y="268.574219" />
+              <CubicCurveTo controlX1="324.101562" controlX2="324.699219" controlY1="268.472656" controlY2="268.074219" x="324.398438" y="267.675781" />
+              <CubicCurveTo controlX1="324.199219" controlX2="326.101562" controlY1="267.375" controlY2="266.773438" x="328.699219" y="266.375" />
+              <CubicCurveTo controlX1="331.398438" controlX2="336.0" controlY1="266.074219" controlY2="265.375" x="339.0" y="264.777344" />
+              <CubicCurveTo controlX1="342.0" controlX2="345.300781" controlY1="264.175781" controlY2="263.675781" x="346.300781" y="263.675781" />
+              <CubicCurveTo controlX1="347.199219" controlX2="348.0" controlY1="263.777344" controlY2="263.175781" x="348.0" y="262.578125" />
+              <CubicCurveTo controlX1="348.0" controlX2="348.398438" controlY1="261.875" controlY2="261.976562" x="349.0" y="262.875" />
+              <CubicCurveTo controlX1="349.800781" controlX2="350.0" controlY1="264.175781" controlY2="264.074219" x="350.0" y="262.675781" />
+              <CubicCurveTo controlX1="350.0" controlX2="350.300781" controlY1="261.675781" controlY2="260.976562" x="350.800781" y="261.078125" />
+              <CubicCurveTo controlX1="351.199219" controlX2="352.5" controlY1="261.175781" controlY2="260.777344" x="353.800781" y="260.078125" />
+              <CubicCurveTo controlX1="355.0" controlX2="357.101562" controlY1="259.378906" controlY2="259.078125" x="358.300781" y="259.378906" />
+              <CubicCurveTo controlX1="360.0" controlX2="360.199219" controlY1="259.878906" controlY2="259.777344" x="359.0" y="258.976562" />
+              <CubicCurveTo controlX1="357.800781" controlX2="358.199219" controlY1="258.179688" controlY2="257.878906" x="361.0" y="257.777344" />
+              <CubicCurveTo controlX1="362.898438" controlX2="365.800781" controlY1="257.679688" controlY2="257.679688" x="367.398438" y="257.777344" />
+              <CubicCurveTo controlX1="369.0" controlX2="370.601562" controlY1="257.980469" controlY2="257.679688" x="370.898438" y="257.078125" />
+              <CubicCurveTo controlX1="371.5" controlX2="380.0" controlY1="256.179688" controlY2="254.082031" x="385.300781" y="253.480469" />
+              <CubicCurveTo controlX1="386.800781" controlX2="388.300781" controlY1="253.378906" controlY2="252.882812" x="388.800781" y="252.382812" />
+              <CubicCurveTo controlX1="389.199219" controlX2="388.398438" controlY1="251.980469" controlY2="251.980469" x="387.0" y="252.28125" />
+              <CubicCurveTo controlX1="385.101562" controlX2="384.898438" controlY1="252.882812" controlY2="252.78125" x="386.0" y="251.980469" />
+              <CubicCurveTo controlX1="386.800781" controlX2="388.699219" controlY1="251.382812" controlY2="250.882812" x="390.101562" y="250.882812" />
+              <CubicCurveTo controlX1="391.5" controlX2="393.5" controlY1="250.882812" controlY2="250.28125" x="394.5" y="249.484375" />
+              <CubicCurveTo controlX1="395.601562" controlX2="397.101562" controlY1="248.683594" controlY2="248.382812" x="397.898438" y="248.683594" />
+              <CubicCurveTo controlX1="398.898438" controlX2="399.101562" controlY1="249.082031" controlY2="248.78125" x="398.5" y="247.882812" />
+              <CubicCurveTo controlX1="397.898438" controlX2="398.199219" controlY1="246.882812" controlY2="246.683594" x="399.800781" y="247.082031" />
+              <CubicCurveTo controlX1="401.0" controlX2="402.0" controlY1="247.484375" controlY2="247.285156" x="402.0" y="246.785156" />
+              <CubicCurveTo controlX1="402.0" controlX2="402.699219" controlY1="246.285156" controlY2="245.882812" x="403.601562" y="245.882812" />
+              <CubicCurveTo controlX1="404.398438" controlX2="404.898438" controlY1="245.882812" controlY2="245.484375" x="404.601562" y="244.984375" />
+              <CubicCurveTo controlX1="404.199219" controlX2="405.300781" controlY1="244.484375" controlY2="243.484375" x="407.0" y="242.6875" />
+              <CubicCurveTo controlX1="408.699219" controlX2="410.300781" controlY1="241.984375" controlY2="240.585938" x="410.601562" y="239.585938" />
+              <CubicCurveTo controlX1="410.898438" controlX2="411.5" controlY1="238.6875" controlY2="238.089844" x="412.0" y="238.386719" />
+              <CubicCurveTo controlX1="412.398438" controlX2="413.0" controlY1="238.6875" controlY2="237.886719" x="413.300781" y="236.789062" />
+              <CubicCurveTo controlX1="413.699219" controlX2="414.300781" controlY1="235.488281" controlY2="234.988281" x="415.101562" y="235.488281" />
+              <CubicCurveTo controlX1="415.898438" controlX2="416.101562" controlY1="235.890625" controlY2="235.789062" x="415.601562" y="235.089844" />
+              <CubicCurveTo controlX1="415.199219" controlX2="415.300781" controlY1="234.390625" controlY2="233.890625" x="415.898438" y="233.890625" />
+              <CubicCurveTo controlX1="416.398438" controlX2="417.898438" controlY1="233.890625" controlY2="231.789062" x="419.199219" y="229.292969" />
+              <CubicCurveTo controlX1="420.5" controlX2="422.5" controlY1="226.691406" controlY2="223.996094" x="423.699219" y="223.195312" />
+              <CubicCurveTo controlX1="425.0" controlX2="425.699219" controlY1="222.296875" controlY2="221.296875" x="425.398438" y="220.796875" />
+              <CubicCurveTo controlX1="424.699219" controlX2="430.0" controlY1="219.695312" controlY2="213.300781" x="431.199219" y="213.699219" />
+              <CubicCurveTo controlX1="431.699219" controlX2="431.898438" controlY1="213.800781" controlY2="213.5" x="431.601562" y="213.0" />
+              <CubicCurveTo controlX1="431.300781" controlX2="434.101562" controlY1="212.5" controlY2="208.902344" x="437.898438" y="205.003906" />
+              <CubicCurveTo controlX1="441.800781" controlX2="444.898438" controlY1="201.003906" controlY2="197.605469" x="444.898438" y="197.308594" />
+              <CubicCurveTo controlX1="445.0" controlX2="445.0" controlY1="197.105469" controlY2="196.609375" x="445.0" y="196.109375" />
+              <CubicCurveTo controlX1="445.0" controlX2="445.398438" controlY1="195.707031" controlY2="196.007812" x="445.898438" y="196.808594" />
+              <CubicCurveTo controlX1="446.601562" controlX2="446.898438" controlY1="197.90625" controlY2="197.707031" x="447.5" y="196.007812" />
+              <CubicCurveTo controlX1="447.800781" controlX2="448.601562" controlY1="194.910156" controlY2="193.910156" x="449.101562" y="193.910156" />
+              <CubicCurveTo controlX1="449.601562" controlX2="450.0" controlY1="193.910156" controlY2="193.210938" x="450.0" y="192.308594" />
+              <CubicCurveTo controlX1="450.0" controlX2="450.5" controlY1="191.410156" controlY2="191.109375" x="451.199219" y="191.511719" />
+              <CubicCurveTo controlX1="451.800781" controlX2="452.0" controlY1="191.910156" controlY2="191.808594" x="451.699219" y="191.109375" />
+              <CubicCurveTo controlX1="451.300781" controlX2="452.300781" controlY1="190.609375" controlY2="188.910156" x="454.0" y="187.613281" />
+              <CubicCurveTo controlX1="455.601562" controlX2="457.0" controlY1="186.210938" controlY2="184.714844" x="457.0" y="184.214844" />
+              <CubicCurveTo controlX1="457.0" controlX2="460.699219" controlY1="183.015625" controlY2="180.015625" x="461.398438" y="180.613281" />
+              <CubicCurveTo controlX1="461.699219" controlX2="462.0" controlY1="181.015625" controlY2="180.515625" x="462.0" y="179.515625" />
+              <CubicCurveTo controlX1="462.0" controlX2="462.5" controlY1="178.515625" controlY2="178.117188" x="463.199219" y="178.515625" />
+              <CubicCurveTo controlX1="463.800781" controlX2="464.0" controlY1="178.914062" controlY2="178.816406" x="463.699219" y="178.214844" />
+              <CubicCurveTo controlX1="463.0" controlX2="465.800781" controlY1="177.117188" controlY2="174.117188" x="466.898438" y="174.71875" />
+              <CubicCurveTo controlX1="467.199219" controlX2="467.601562" controlY1="174.917969" controlY2="174.519531" x="467.800781" y="173.71875" />
+              <CubicCurveTo controlX1="468.0" controlX2="467.800781" controlY1="172.820312" controlY2="172.917969" x="467.0" y="173.917969" />
+              <CubicCurveTo controlX1="466.0" controlX2="465.898438" controlY1="175.21875" controlY2="175.21875" x="466.300781" y="173.917969" />
+              <CubicCurveTo controlX1="466.5" controlX2="467.199219" controlY1="173.117188" controlY2="172.320312" x="467.800781" y="172.320312" />
+              <CubicCurveTo controlX1="468.5" controlX2="469.300781" controlY1="172.21875" controlY2="172.019531" x="469.800781" y="171.917969" />
+              <CubicCurveTo controlX1="470.199219" controlX2="470.898438" controlY1="171.820312" controlY2="171.820312" x="471.5" y="171.917969" />
+              <CubicCurveTo controlX1="472.0" controlX2="472.199219" controlY1="172.019531" controlY2="171.820312" x="471.800781" y="171.417969" />
+              <CubicCurveTo controlX1="471.101562" controlX2="474.601562" controlY1="170.621094" controlY2="166.921875" x="477.5" y="165.421875" />
+              <CubicCurveTo controlX1="478.601562" controlX2="479.5" controlY1="164.824219" controlY2="163.824219" x="479.5" y="163.125" />
+              <CubicCurveTo controlX1="479.5" controlX2="480.101562" controlY1="162.421875" controlY2="161.523438" x="480.800781" y="161.023438" />
+              <CubicCurveTo controlX1="481.601562" controlX2="482.101562" controlY1="160.523438" controlY2="159.925781" x="482.101562" y="159.523438" />
+              <CubicCurveTo controlX1="481.800781" controlX2="494.898438" controlY1="157.925781" controlY2="137.433594" x="497.300781" y="135.835938" />
+              <CubicCurveTo controlX1="497.800781" controlX2="498.101562" controlY1="135.535156" controlY2="134.835938" x="498.101562" y="134.335938" />
+              <CubicCurveTo controlX1="498.101562" controlX2="498.800781" controlY1="133.835938" controlY2="132.539062" x="499.800781" y="131.4375" />
+              <CubicCurveTo controlX1="500.699219" controlX2="502.101562" controlY1="130.339844" controlY2="128.238281" x="502.898438" y="126.742188" />
+              <CubicCurveTo controlX1="503.699219" controlX2="504.699219" controlY1="125.242188" controlY2="124.242188" x="505.101562" y="124.542969" />
+              <CubicCurveTo controlX1="505.5" controlX2="506.199219" controlY1="124.742188" controlY2="124.441406" x="506.601562" y="123.839844" />
+              <CubicCurveTo controlX1="507.0" controlX2="506.898438" controlY1="123.042969" controlY2="122.941406" x="506.199219" y="123.34375" />
+              <CubicCurveTo controlX1="504.601562" controlX2="504.699219" controlY1="124.339844" controlY2="123.140625" x="506.398438" y="121.441406" />
+              <CubicCurveTo controlX1="507.101562" controlX2="508.101562" controlY1="120.644531" controlY2="120.34375" x="508.5" y="120.742188" />
+              <CubicCurveTo controlX1="508.898438" controlX2="509.101562" controlY1="121.144531" controlY2="120.742188" x="508.898438" y="119.945312" />
+              <CubicCurveTo controlX1="508.398438" controlX2="510.0" controlY1="117.542969" controlY2="113.945312" x="511.601562" y="113.945312" />
+              <CubicCurveTo controlX1="512.398438" controlX2="513.0" controlY1="113.945312" controlY2="113.546875" x="513.0" y="113.148438" />
+              <CubicCurveTo controlX1="513.0" controlX2="514.101562" controlY1="112.648438" controlY2="110.949219" x="515.5" y="109.347656" />
+              <CubicCurveTo controlX1="516.898438" controlX2="518.601562" controlY1="107.75" controlY2="105.25" x="519.199219" y="103.75" />
+              <CubicCurveTo controlX1="519.898438" controlX2="520.800781" controlY1="102.25" controlY2="101.351562" x="521.398438" y="101.652344" />
+              <CubicCurveTo controlX1="521.898438" controlX2="522.0" controlY1="102.050781" controlY2="101.753906" x="521.5" y="101.050781" />
+              <CubicCurveTo controlX1="521.101562" controlX2="521.898438" controlY1="100.253906" controlY2="98.554688" x="523.800781" y="96.65625" />
+              <CubicCurveTo controlX1="528.398438" controlX2="539.699219" controlY1="91.65625" controlY2="76.363281" x="540.5" y="74.066406" />
+              <CubicCurveTo controlX1="540.800781" controlX2="541.601562" controlY1="72.867188" controlY2="72.167969" x="542.101562" y="72.566406" />
+              <CubicCurveTo controlX1="542.601562" controlX2="542.898438" controlY1="72.867188" controlY2="72.765625" x="542.800781" y="72.265625" />
+              <CubicCurveTo controlX1="542.300781" controlX2="554.0" controlY1="70.566406" controlY2="53.972656" x="555.601562" y="53.972656" />
+              <CubicCurveTo controlX1="556.601562" controlX2="557.101562" controlY1="53.972656" controlY2="53.675781" x="556.699219" y="53.375" />
+              <CubicCurveTo controlX1="555.800781" controlX2="558.800781" controlY1="52.476562" controlY2="46.976562" x="560.300781" y="46.976562" />
+              <CubicCurveTo controlX1="561.0" controlX2="562.101562" controlY1="46.976562" controlY2="45.976562" x="562.898438" y="44.679688" />
+              <CubicCurveTo controlX1="564.199219" controlX2="564.199219" controlY1="42.578125" controlY2="42.578125" x="562.300781" y="43.980469" />
+              <CubicCurveTo controlX1="561.300781" controlX2="561.5" controlY1="44.777344" controlY2="44.378906" x="563.0" y="42.980469" />
+              <CubicCurveTo controlX1="564.398438" controlX2="566.199219" controlY1="41.582031" controlY2="39.582031" x="567.0" y="38.582031" />
+              <CubicCurveTo controlX1="568.300781" controlX2="568.300781" controlY1="36.78125" controlY2="36.683594" x="567.0" y="37.382812" />
+              <CubicCurveTo controlX1="566.101562" controlX2="566.199219" controlY1="37.78125" controlY2="37.582031" x="567.199219" y="36.683594" />
+              <CubicCurveTo controlX1="568.199219" controlX2="568.800781" controlY1="35.882812" controlY2="35.082031" x="568.5" y="34.785156" />
+              <CubicCurveTo controlX1="568.199219" controlX2="569.601562" controlY1="34.582031" controlY2="32.484375" x="571.5" y="30.285156" />
+              <CubicCurveTo controlX1="573.398438" controlX2="575.0" controlY1="27.988281" controlY2="25.386719" x="575.0" y="24.488281" />
+              <CubicCurveTo controlX1="575.0" controlX2="575.5" controlY1="23.488281" controlY2="23.1875" x="576.199219" y="23.589844" />
+              <CubicCurveTo controlX1="576.800781" controlX2="577.0" controlY1="23.988281" controlY2="23.890625" x="576.601562" y="23.1875" />
+              <CubicCurveTo controlX1="576.300781" controlX2="576.898438" controlY1="22.589844" controlY2="19.691406" x="578.0" y="16.792969" />
+              <CubicCurveTo controlX1="579.101562" controlX2="580.0" controlY1="13.894531" controlY2="10.296875" x="580.0" y="8.695312" />
+              <LineTo x="580.0" y="5.996094" />
+              <LineTo x="4.0" y="5.996094" />
+              <LineTo x="4.0" y="3.0" />
+              <CubicCurveTo controlX1="4.0" controlX2="3.601562" controlY1="1.300781" controlY2="0.0" x="3.0" y="0.0" />
+              <CubicCurveTo controlX1="2.5" controlX2="2.0" controlY1="0.0" controlY2="1.300781" x="2.0" y="3.0" />
+              <ClosePath />
+              <MoveTo x="441.300781" y="196.40625" />
+              <CubicCurveTo controlX1="441.0" controlX2="440.5" controlY1="197.308594" controlY2="197.808594" x="440.300781" y="197.507812" />
+              <CubicCurveTo controlX1="440.0" controlX2="440.101562" controlY1="197.207031" controlY2="196.609375" x="440.5" y="196.007812" />
+              <CubicCurveTo controlX1="441.398438" controlX2="442.0" controlY1="194.410156" controlY2="194.707031" x="441.300781" y="196.40625" />
+              <ClosePath />
+              <MoveTo x="411.0" y="235.289062" />
+              <CubicCurveTo controlX1="411.0" controlX2="410.199219" controlY1="235.488281" controlY2="236.289062" x="409.300781" y="236.988281" />
+              <CubicCurveTo controlX1="407.699219" controlX2="407.601562" controlY1="238.289062" controlY2="238.1875" x="408.898438" y="236.589844" />
+              <CubicCurveTo controlX1="410.199219" controlX2="411.0" controlY1="234.988281" controlY2="234.488281" x="411.0" y="235.289062" />
+              <ClosePath />
+              <MoveTo x="401.5" y="242.886719" />
+              <CubicCurveTo controlX1="401.199219" controlX2="400.300781" controlY1="243.386719" controlY2="243.886719" x="399.699219" y="243.886719" />
+              <CubicCurveTo controlX1="399.0" controlX2="399.101562" controlY1="243.886719" controlY2="243.484375" x="400.0" y="242.886719" />
+              <CubicCurveTo controlX1="401.898438" controlX2="402.300781" controlY1="241.6875" controlY2="241.6875" x="401.5" y="242.886719" />
+              <ClosePath />
+              <MoveTo x="123.699219" y="282.46875" />
+              <CubicCurveTo controlX1="123.398438" controlX2="122.5" controlY1="282.765625" controlY2="282.867188" x="121.800781" y="282.566406" />
+              <CubicCurveTo controlX1="121.0" controlX2="121.300781" controlY1="282.265625" controlY2="281.96875" x="122.398438" y="281.96875" />
+              <CubicCurveTo controlX1="123.5" controlX2="124.101562" controlY1="281.867188" controlY2="282.167969" x="123.699219" y="282.46875" />
+              <ClosePath />
+              <MoveTo x="150.699219" y="282.46875" />
+              <CubicCurveTo controlX1="150.398438" controlX2="149.5" controlY1="282.765625" controlY2="282.867188" x="148.800781" y="282.566406" />
+              <CubicCurveTo controlX1="148.0" controlX2="148.300781" controlY1="282.265625" controlY2="281.96875" x="149.398438" y="281.96875" />
+              <CubicCurveTo controlX1="150.5" controlX2="151.101562" controlY1="281.867188" controlY2="282.167969" x="150.699219" y="282.46875" />
+              <ClosePath />
+              <MoveTo x="154.699219" y="282.46875" />
+              <CubicCurveTo controlX1="154.398438" controlX2="153.5" controlY1="282.765625" controlY2="282.867188" x="152.800781" y="282.566406" />
+              <CubicCurveTo controlX1="152.0" controlX2="152.300781" controlY1="282.265625" controlY2="281.96875" x="153.398438" y="281.96875" />
+              <CubicCurveTo controlX1="154.5" controlX2="155.101562" controlY1="281.867188" controlY2="282.167969" x="154.699219" y="282.46875" />
+              <ClosePath />
+              <MoveTo x="162.300781" y="282.566406" />
+              <CubicCurveTo controlX1="161.601562" controlX2="160.398438" controlY1="282.765625" controlY2="282.765625" x="159.800781" y="282.566406" />
+              <CubicCurveTo controlX1="159.101562" controlX2="159.601562" controlY1="282.265625" controlY2="282.066406" x="161.0" y="282.066406" />
+              <CubicCurveTo controlX1="162.398438" controlX2="162.898438" controlY1="282.066406" controlY2="282.265625" x="162.300781" y="282.566406" />
+              <ClosePath />
+              <MoveTo x="211.300781" y="282.566406" />
+              <CubicCurveTo controlX1="210.601562" controlX2="209.398438" controlY1="282.765625" controlY2="282.765625" x="208.800781" y="282.566406" />
+              <CubicCurveTo controlX1="208.101562" controlX2="208.601562" controlY1="282.265625" controlY2="282.066406" x="210.0" y="282.066406" />
+              <CubicCurveTo controlX1="211.398438" controlX2="211.898438" controlY1="282.066406" controlY2="282.265625" x="211.300781" y="282.566406" />
+              <ClosePath />
+          </elements>
+      </Path>
+   </children>
+</AnchorPane>
